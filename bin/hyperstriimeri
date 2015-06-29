@@ -1,0 +1,16 @@
+#!/bin/bash
+# HTTP live streaming segmenter for your input video
+# usage: $0 INPUT.ts [out.m3u8]
+
+[ "$1" ] || {
+	echo usage: $0 INPUT.ts [out.m3u8]
+	exit 1
+}
+
+IN="$1"
+OUT="${2:-out.m3u8}"
+
+# http://stackoverflow.com/questions/27227175/ffmpeg-http-live-streaming-remove-old-segments
+# ffmpeg -i $IN -f ssegment -segment_list out.m3u8 -segment_list_type hls -segment_list_size 10 -segment_list_flags +live out%04d.ts
+
+ffmpeg -i $IN -bsf:v h264_mp4toannexb -c copy $OUT

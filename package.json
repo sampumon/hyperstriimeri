@@ -1,0 +1,12 @@
+{
+  "name": "hyperstriimeri",
+  "version": "0.0.1",
+  "description": "HTTP live streaming segmenter for your input video",
+  "author": "Samuli Kaipiainen",
+  "license": "MIT",
+  "bin": {
+    "hyperstriimeri": "./bin/hyperstriimeri"
+  },
+  "dependencies": {
+  }
+}
