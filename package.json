@@ -1,6 +1,6 @@
 {
   "name": "hyperstriimeri",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "HTTP live streaming segmenter for your input video",
   "author": "Samuli Kaipiainen",
   "license": "MIT",
