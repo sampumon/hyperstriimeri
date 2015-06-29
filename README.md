@@ -12,7 +12,7 @@ then
 
 ## install
 
-	npm install -g git+https://git@github.com/samuli/hyperstriimeri.git
+	npm install -g git+https://git@github.com/sampumon/hyperstriimeri.git
 
 ## dependencies
 
